@@ -87,9 +87,9 @@ function GameServer() {
         serverChatAscii: 0,         // Set to 1 to disable non-ANSI letters in the chat (english only mode)
         separateChatForTeams: 0,    // Set to 1 to separate chat for game modes with teams like 'Teams'
         
-        serverName: 'MultiOgar #1', // Server name
-        serverWelcome1: 'Welcome to MultiOgar server!',      // First server welcome message
-        serverWelcome2: '',         // Second server welcome message (for info, etc)
+        serverName: 'MultiYT #1', // Server name
+        serverWelcome1: 'Welcome to MultiYT #1 server!',      // First server welcome message
+        serverWelcome2: '#1',         // Second server welcome message (for info, etc)
         
         borderWidth: 14142,         // Map border size (Vanilla value: 14142)
         borderHeight: 14142,        // Map border size (Vanilla value: 14142)
@@ -107,16 +107,16 @@ function GameServer() {
         virusMinAmount: 50,         // Minimum number of viruses on the map.
         virusMaxAmount: 100,        // Maximum number of viruses on the map. If this number is reached, then ejected cells will pass through viruses.
         
-        ejectSize: 38,              // Size of ejected cells (vanilla 38)
-        ejectSizeLoss: 43,          // Eject size which will be substracted from player cell (vanilla 43?)
+        ejectSize: 100,              // Size of ejected cells (vanilla 38)
+        ejectSizeLoss: 5,          // Eject size which will be substracted from player cell (vanilla 43?)
         ejectDistance: 780,         // vanilla 780
         ejectCooldown: 3,           // min ticks between ejects
         ejectSpawnPlayer: 1,        // if 1 then player may be spawned from ejected mass
         
         playerMinSize: 32,          // Minimym size of the player cell (mass = 32*32/100 = 10.24)
         playerMaxSize: 1500,        // Maximum size of the player cell (mass = 1500*1500/100 = 22500)
-        playerMinSplitSize: 60,     // Minimum player cell size allowed to split (mass = 60*60/100 = 36) 
-        playerStartSize: 64,        // Start size of the player cell (mass = 64*64/100 = 41)
+        playerMinSplitSize: 1,     // Minimum player cell size allowed to split (mass = 60*60/100 = 36) 
+        playerStartSize: 1337,        // Start size of the player cell (mass = 64*64/100 = 41)
         playerMaxCells: 16,         // Max cells the player is allowed to have
         playerSpeed: 1,             // Player speed multiplier
         playerDecayRate: .002,      // Amount of player cell size lost per second
