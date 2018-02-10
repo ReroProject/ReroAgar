@@ -10,7 +10,7 @@ function MotherCell() {
     this.isMotherCell = true;       // Not to confuse bots
     this.setColor({ r: 0xce, g: 0x63, b: 0x63 });
     this.motherCellMinSize = 149;   // vanilla 149 (mass = 149*149/100 = 222.01)
-    this.motherCellSpawnAmount = 2;
+    this.motherCellSpawnAmount = 20;
     if (!this.getSize()) {
         this.setSize(this.motherCellMinSize);
     }
