@@ -61,7 +61,7 @@ function GameServer() {
     this.config = {
         logVerbosity: 4,            // Console log level (0=NONE; 1=FATAL; 2=ERROR; 3=WARN; 4=INFO; 5=DEBUG)
         logFileVerbosity: 5,        // File log level
-        
+        virusMaxCells: 16,
         serverVersionCode : 2,      // For back compatibility and smooth update process
         serverTimeout: 300,         // Seconds to keep connection alive for non-responding client
         serverWsModule: 'ws',       // WebSocket module: 'ws' or 'uws' (install npm package before using uws)
