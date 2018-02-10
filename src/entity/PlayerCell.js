@@ -41,7 +41,7 @@ PlayerCell.prototype.canRemerge = function () {
 
 PlayerCell.prototype.canEat = function (cell) {
     // player cell can eat anyone
-    return true;
+    return this.isMoving == false;
 };
 
 PlayerCell.prototype.getSplitSize = function () {
