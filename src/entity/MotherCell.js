@@ -22,8 +22,7 @@ MotherCell.prototype = new Cell();
 // Main Functions
 
 MotherCell.prototype.canEat = function (cell) {
-    return cell.cellType == 0 ||    // can eat player cell
-        cell.cellType == 3;         // can eat ejected mass
+    return cell.isMoving == false;       // can eat cells that are not in boosted mode
 };
 
 MotherCell.prototype.onEaten = Virus.prototype.onEaten; // Copies the virus prototype function
