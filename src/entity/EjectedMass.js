@@ -9,7 +9,11 @@ function EjectedMass() {
 module.exports = EjectedMass;
 EjectedMass.prototype = new Cell();
 
+
 // Main Functions
+EjectedMass.prototype.canEat = function (cell) {
+    return cell.cellType == 3; // virus can eat ejected mass only
+};
 
 EjectedMass.prototype.onAdd = function (gameServer) {
     // Add to list of ejected mass
